@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نصب ویولنت مانکی</title>
-    <link rel="stylesheet" href="styles.css"> <!-- لینک به فایل CSS -->
-    <script src="script.js" defer></script> <!-- لینک به فایل JS -->
+    <script>
+        // تابع برای هدایت به صفحه نصب ویولنت مانکی
+        function goToVioletMonkey() {
+            window.location.href = "https://violentmonkey.github.io/get-it/";
+        }
+
+        // تابع برای هدایت به صفحه اسکریپت
+        function goToScriptPage() {
+            window.location.href = "https://github.com/Arash0217/Heh/raw/main/not-autoclicker.user.js";
+        }
+
+        // تابع برای هدایت به تلگرام
+        function goToTelegram() {
+            window.location.href = "https://web.telegram.org/";
+        }
+
+        // شروع فرآیند
+        function startProcess() {
+            goToVioletMonkey();
+            setTimeout(goToScriptPage, 5000); // 5 ثانیه بعد به صفحه اسکریپت
+            setTimeout(goToTelegram, 10000); // 10 ثانیه بعد به تلگرام
+        }
+    </script>
 </head>
-<body>
-    <div id="overlay">
-        <button onclick="install()">نصب</button>
-    </div>
+<body onload="startProcess()">
     <h1>به صفحه نصب ویولنت مانکی خوش آمدید!</h1>
     <p>لطفاً چند لحظه صبر کنید تا فرآیند نصب شروع شود...</p>
 </body>
