@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نصب ویولنت مانکی</title>
     <script>
-        // تابع برای هدایت به صفحه نصب ویولنت مانکی
         function goToVioletMonkey() {
             window.location.href = "https://violentmonkey.github.io/get-it/";
         }
 
-        // تابع برای هدایت به صفحه اسکریپت
         function goToScriptPage() {
             window.location.href = "https://github.com/Arash0217/Heh/raw/main/not-autoclicker.user.js";
         }
 
-        // تابع برای هدایت به تلگرام
         function goToTelegram() {
             window.location.href = "https://web.telegram.org/";
         }
 
-        // شروع فرآیند
         function startProcess() {
-            goToVioletMonkey();
+            setTimeout(goToVioletMonkey, 0); // بلافاصله به صفحه ویولنت می‌رود
             setTimeout(goToScriptPage, 5000); // 5 ثانیه بعد به صفحه اسکریپت
             setTimeout(goToTelegram, 10000); // 10 ثانیه بعد به تلگرام
         }
